@@ -1,0 +1,8 @@
+Catatan menyalakan PostgreSQL
+1. Buka Docker Desktop dari menu Start Windows. Tunggu sampai Docker Engine berjalan. Panduan Docker Desktop untuk Windows
+2. Buka PowerShell di folder proyek, lalu jalankan:
+   cd D:\Code\Projects\payroll-system
+   docker compose up --wait postgres
+   docker compose ps postgres
+3. Cek kolom STATUS. Jika tertulis Up (healthy), PostgreSQL siap menerima koneksi. 
+--wait menunggu pemeriksaan kesehatan selesai dan membiarkan container berjalan di latar belakang.

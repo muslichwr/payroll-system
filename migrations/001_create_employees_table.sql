@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    employee_id VARCHAR(100) NOT NULL UNIQUE,
+    salary BIGINT NOT NULL,
+    account_number VARCHAR(50) NOT NULL,
+    bank_code VARCHAR(20) NOT NULL,
+    bank_name VARCHAR(255),
+    is_active BOOLEAN DEFAULT true,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
